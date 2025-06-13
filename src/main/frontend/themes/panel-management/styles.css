@@ -2,3 +2,51 @@
 @import url('./views/paneles-view.css');
 @import url('./views/panelista-view.css');
 @import url('./views/propiedades-view.css');
+
+html {
+  /* Base Color - Can be adjusted if needed, but usually derived from primary or contrast */
+  /* --lumo-base-color: hsl(0, 0%, 100%); */
+
+  /* Grayscale Colors - Generally okay unless a tinted grayscale is desired */
+  /* For example, to make grays slightly orange-tinted:
+  --lumo-contrast-5pct: hsla(30, 20%, 50%, 0.05);
+  --lumo-contrast-10pct: hsla(30, 20%, 50%, 0.1);
+  --lumo-contrast-20pct: hsla(30, 20%, 50%, 0.2);
+  ...and so on for other contrast values
+  */
+
+  /* Primary Colors */
+  --lumo-primary-color: hsl(30, 100%, 50%); /* Orange */
+  --lumo-primary-text-color: hsl(30, 100%, 20%); /* Dark Orange */
+  --lumo-primary-contrast-color: hsl(0, 0%, 100%); /* White */
+  --lumo-primary-color-10pct: hsla(30, 100%, 50%, 0.1);
+  --lumo-primary-color-50pct: hsla(30, 100%, 50%, 0.5);
+
+  /* Error Colors */
+  --lumo-error-color: hsl(0, 70%, 60%); /* Slightly less intense red */
+  --lumo-error-text-color: hsl(0, 70%, 30%); /* Darker red for text */
+  --lumo-error-contrast-color: hsl(0, 0%, 100%); /* White */
+  --lumo-error-color-10pct: hsla(0, 70%, 60%, 0.1);
+  --lumo-error-color-50pct: hsla(0, 70%, 60%, 0.5);
+
+  /* Warning Colors */
+  --lumo-warning-color: hsl(45, 100%, 50%); /* Yellow-Orange */
+  --lumo-warning-text-color: hsl(45, 100%, 20%); /* Dark Yellow-Orange */
+  --lumo-warning-contrast-color: hsl(0, 0%, 0%); /* Black for contrast */
+  --lumo-warning-color-10pct: hsla(45, 100%, 50%, 0.1);
+  /* --lumo-warning-color-50pct: hsla(45, 100%, 50%, 0.5); */ /* Lumo docs don't list a 50pct for warning by default */
+
+  /* Success Colors */
+  --lumo-success-color: hsl(120, 70%, 45%); /* Pleasant green */
+  --lumo-success-text-color: hsl(120, 70%, 25%); /* Darker green for text */
+  --lumo-success-contrast-color: hsl(0, 0%, 100%); /* White */
+  --lumo-success-color-10pct: hsla(120, 70%, 45%, 0.1);
+  --lumo-success-color-50pct: hsla(120, 70%, 45%, 0.5);
+
+  /* Text Colors - Adjust if default text colors don't contrast well with new base/grays if those were changed */
+  /* --lumo-header-text-color: hsl(30, 100%, 10%); */
+  /* --lumo-body-text-color: hsl(30, 80%, 15%); */
+  /* --lumo-secondary-text-color: hsl(30, 50%, 30%); */
+  /* --lumo-tertiary-text-color: hsl(30, 40%, 40%); */
+  /* --lumo-disabled-text-color: hsla(30, 30%, 50%, 0.7); */
+}
